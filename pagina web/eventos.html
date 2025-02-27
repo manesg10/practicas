@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Sostenibles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="pagina_eventos">
+
+    <header>
+
+        <a href="gestion de eventos sostenibles.html">
+            <img src="imagenes/logo.png" alt="Logo" id="logo_inicio">
+        </a>
+        <div id="cabecera">
+            <p id="titulo"><b>Eventos Sostenibles</b></p>
+            <ul id="lista">
+                <ol><a href="inicio_sesion.html">Registro / Inicio de sesión</a></ol>
+            </ul>        
+        </div>
+    </header>
+
+    <main>
+        <h2>Próximos Eventos</h2>
+        
+        <!-- Filtros -->
+        <div class="filtros">
+            <label for="categoria">Categoría:</label>
+            <select id="categoria">
+                <option value="todas">Todas</option>
+                <option value="conferencia">Conferencias</option>
+                <option value="taller">Talleres</option>
+                <option value="actividad">Actividades</option>
+            </select>
+        </div>
+
+        <!-- Lista de eventos -->
+        <section class="lista-eventos">
+            <div class="evento">
+                <h3>Taller de Reciclaje Creativo</h3>
+                <p>📅 <strong>Fecha:</strong> 10 de marzo, 2025</p>
+                <p>📍 <strong>Ubicación:</strong> Madrid</p>
+                <p>🎟 <strong>Categoría:</strong> Taller</p>
+                <p>🎤 <strong>Organizador:</strong> EcoInnovadores</p>
+                <button class="btn-inscribirse">Inscribirse</button>
+            </div>
+
+            <div class="evento">
+                <h3>Conferencia: Energías Renovables</h3>
+                <p>📅 <strong>Fecha:</strong> 15 de marzo, 2025</p>
+                <p>📍 <strong>Ubicación:</strong> Online</p>
+                <p>🎟 <strong>Categoría:</strong> Conferencia</p>
+                <p>🎤 <strong>Organizador:</strong> GreenTech Solutions</p>
+                <button class="btn-inscribirse">Inscribirse</button>
+            </div>
+
+            <div class="evento">
+                <h3>Jornada de Reforestación</h3>
+                <p>📅 <strong>Fecha:</strong> 20 de marzo, 2025</p>
+                <p>📍 <strong>Ubicación:</strong> Barcelona</p>
+                <p>🎟 <strong>Categoría:</strong> Actividad al aire libre</p>
+                <p>🎤 <strong>Organizador:</strong> Fundación Bosques Vivos</p>
+                <button class="btn-inscribirse">Inscribirse</button>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

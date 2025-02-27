@@ -1,0 +1,312 @@
+/*-----página inicial-----*/
+
+/* Fondo */
+#pagina_inicial {
+    background-image: url('imagenes/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    animation: zoomInOut 20s infinite, fadeOutBackground 20s infinite;
+}
+
+/* Animación de zoom */
+@keyframes zoomInOut {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* Cabecera */
+#cabecera {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 20px;
+    position: relative ;
+    z-index: 1;
+}
+
+/* Estilo para el logo */
+#logo {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+/* Estilo para el título */
+#titulo {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 24px;
+    margin: 0px 0;
+    z-index: 2;
+}
+
+/* Estilo para la lista */
+#lista {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: black;
+    margin-top: 0px;
+    z-index: 2;
+}
+
+#lista ol {
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    margin: 5px 10px;
+}
+
+#lista a {
+    margin-top: 25px;
+    margin: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Estilo para el texto principal */
+#texto{
+    margin-top: 450px;
+    color: white;
+    font-size: 25px;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: black;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/*-----página registro-----*/
+
+/* Estilos generales */
+#pagina_sesion {
+    background-image: url('imagenes/fondo4.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    animation: zoomInOut 20s infinite, fadeOutBackground 20s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+
+/* Animación de zoom */
+@keyframes zoomInOut {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+/* formulario */
+#contenedor {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+/* Estilo del título */
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Campos formulario */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Botón inicio de sesión */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #008f39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #006f2d;
+}
+
+/* Enlace de registro */
+#inicio_sesion {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+#registrarse a {
+    color: #008f39;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#registrarse a:hover {
+    text-decoration: underline;
+}
+
+/*-----logo inicio-----*/
+#logo_inicio {
+    width: 100px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+
+/*-----eventos-----*/
+#pagina_eventos {
+    font-family: Arial, sans-serif;
+    background-image: url('imagenes/fondo3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333;
+    animation: zoomInOut 20s infinite, fadeOutBackground 20s infinite;
+}
+
+@keyframes zoomInOut {
+    0% {
+        background-size: 100%;
+    }
+    50% {
+        background-size: 110%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+
+
+/* Estilos del encabezado */
+header {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 150px;
+        padding: 20px;
+        position: relative ;
+        z-index: 1;
+
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Filtros */
+.filtros {
+    margin-bottom: 20px;
+}
+
+.filtros select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+/* Estilos de la lista de eventos */
+.lista-eventos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.evento {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: left;
+}
+
+.evento h3 {
+    margin-bottom: 10px;
+    color: #4CAF50;
+}
+
+.evento p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Botón de inscripción */
+.btn-inscribirse {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-inscribirse:hover {
+    background-color: #45a049;
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+}
